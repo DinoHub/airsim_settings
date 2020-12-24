@@ -1,0 +1,57 @@
+{
+  "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/master/docs/settings.md",
+  "SettingsVersion": 1.2,
+  "SimMode": "Car",
+  "ViewMode": "",
+  "ClockSpeed": 1.0,
+  "Vehicles": {
+    "CV": {
+      "VehicleType": "PhysXCar",
+      "DefaultVehicleState": "Armed",
+      "EnableCollisionPassthrogh": false,
+      "EnableCollisions": true,
+      "AllowAPIAlways": false,
+      
+      "Cameras": {
+        "left": {
+          "CaptureSettings": [
+            {
+              "PublishToRos": 1,
+              "ImageType": 0,
+              "Width": 640,
+              "Height": 360,
+              "FOV_Degrees": 90,
+              "TargetGamma": 1.5
+            }
+          ],
+          "X": 1.75, "Y": -0.15, "Z": -1.25,
+          "Pitch": 0, "Roll": 0, "Yaw": 0
+        },
+        "right": {
+            "CaptureSettings": [
+              {
+                "PublishToRos": 1,
+                "ImageType": 0,
+                "Width": 640,
+                "Height": 360,
+                "FOV_Degrees": 90,
+                "TargetGamma": 1.5
+              }
+            ],
+            "X": 1.75, "Y": 0.15, "Z": -1.25,
+            "Pitch": 0, "Roll": 0, "Yaw": 0
+          }
+      },
+      
+      "X": 0, "Y": 0, "Z": 0,
+      "Pitch": 0, "Roll": 0, "Yaw": 0
+    }
+  },
+  "SubWindows": [
+    {"WindowID": 0, "ImageType": 0, "CameraName": "left", "Visible": true},
+    {"WindowID": 1, "ImageType": 0, "CameraName": "left", "Visible": false},
+    {"WindowID": 2, "ImageType": 0, "CameraName": "right", "Visible": true}
+  ]
+  
+}
+
